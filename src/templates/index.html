@@ -7,28 +7,147 @@
     {% call fieldset("whoami") %}
       <div class="flex flex-col gap-3 text-lg">
         <p>
-          Hi there! I am a <span id="age"></span> y/o student at Purdue
+          Hey!! I'm Alexiy, a Junior at Purdue majoring in CS and Math, 
+          with an unbreakable caffeine addiction (even full-timers at SpaceX were concerned...).
+          <br>
+          <br>
+
+          I love learning anything new and learn best by getting my hands dirty.
+          For me, the best feeling in the world is when something works/clicks after bashing my head against a problem for hours or even days.
+          <br>
+          <br>
+
+          In my free time, I love hiking / mountain biking, and finding excuses to visit coffee shops.
+
+          <!-- Hi there! I am a <span id="age"></span> y/o student at Purdue
           University majoring in Computer Science. I like rockets and computers.
           Some of my hobbies include photography, reading sci-fi, 3d printing,
-          software defined radio, and climbing
+          software defined radio, and climbing -->
         </p>
         <script>
-          const bday = new Date("2003-12-30");
+          const bday = new Date("2003-10-22");
           const ageInMs = Date.now() - bday.getTime();
           const age = Math.floor(ageInMs / 31556952000);
           document.getElementById("age").innerText = age;
         </script>
         <p>
-          Here's a photo of me in front of an SR-71 (and Space Shuttle
-          Discovery)
+          <!-- Here's a photo of me in front of an SR-71 (and Space Shuttle
+          Discovery) -->
         </p>
         <img
-          src="/assets/me.jpg"
-          alt="me in front of an sr-71"
-          class="h-[350px] object-cover"
+          src="/assets/me.png"
+          alt="me @ Garibaldi Lake"
+          class="h-[450px] object-cover"
         />
       </div>
     {% endcall %}
+    <!-- <Random Facts/> -->
+    {% call fieldset("~/random_facts.md") %}
+      <article>
+        <h4>Favorite Quotes</h4>
+        <ul>
+          <li>"If you are not in pain, you are not learning." - mentor @ SpaceX</li>
+          <li>"FAFO" and "FIFI" - manager at SpaceX</li>
+          <li> "Oooooh yea I dont like this problem. It came off a graduate qualifying exam. I put it on there just to torment people, even I don't know how to do it" - Abstract Algebra Prof.</li>
+          <li>"[Insert Algo Question]. Provide a brief but precise explanation" - CS 251/381 exams</li>
+        </ul>
+        <h4>Favorite Coffee Shops</h4>
+        <ul>
+          <li> Mount Currie Coffee Co in Whistler B.C.</li>
+          <li>Philz Coffee in Sunnyvale</li>
+        </ul>
+        <h4>Favorite Hikes</h4>
+        <ul>
+          <li>Sahale Arm / Cascade Pass in Northern Washington</li>
+          <li>Garibaldi Lake in B.C</li>
+          <li>Lake Ediza - Iceberg Lake - Thousand Island Lake loop in Eastern Sierra</li>
+        </ul>
+        <h4>Foreign Languages</h4>
+        <ul>
+          <li>Ukrainian</li>
+          <li>Russian</li>
+          <li>a bit of Spanish</li>
+        </ul>
+        <h4>Favorite Books</h4>
+        <ul>
+          <li>The Martian by Andy Weir</li>
+          <li>Project Hail Mary by Andy Weir</li>
+        </ul>
+      </article>
+    {% endcall %}
+    <!-- <Experience/> -->
+    {% call fieldset("~/Experience.md") %}
+      <article>
+        <p style="text-align:left;font-weight:bold">
+          AI Engineering Intern <span>&#64;</span> <a href="https://www.armada.ai/"> <b>Armada AI</b></a>
+          <span style="float:right;">
+          Remote | Oct 2023 - Present
+               
+          </span>
+      </p>
+     <ul>
+          <li>Develop natural language robot control methods using CV and LLMs</li>
+          <li>Generate synthetic datasets and finetune LLMs through SFT, DPO, PEFT, FSDP</li>
+      </ul>
+
+      <p style="text-align:left;font-weight:bold">
+        Undegraduate Researcher <span>&#64;</span> <a href="https://corallab.net/"> <b>CoRAL Lab</b></a>
+        <span style="float:right;font-weight:bold;">
+        Purdue | Aug 2023 - Present
+        </span>
+      </p>
+     <ul>
+          <li>Conducting research on robotic learning under the supervision of Professor Ahmed Qureshi</li>
+          <li>Teaching quadruped robots to navigate outdoors through LLMs, SDFs, RAG and vector databases</li>
+      </ul>
+
+      <p style="text-align:left;font-weight:bold">
+        Engineering Intern <span>&#64;</span> <a href="https://www.spacex.com/"> <b>SpaceX</b></a>
+        <span style="float:right;font-weight:bold;">
+        Redmond | May 2023 - Aug 2023 
+        </span>
+      </p>
+     <ul>
+          <li>Develop robotic solutions for quicker manufacturing and assembly of Starlink satellites</li>
+          <li>Prototype satellite assembly cells, working with 6-axis robotics arms, CV, actuators, sensors, & safety hardware</li>
+          <li>Achieve 80x speedup between PLC & CV software by developing an IP-style communication library</li>
+          <li>Create automation scripts using Python, TypeScript, C/Cpp, and C# / .Net, saving >$200k on one instance</li>
+      </ul>
+      <p style="text-align:left;font-weight:bold">
+        TensorFlow Model Developer <span>&#64;</span> <a href="https://github.com/PurdueDualityLab/tf-maskformer"> <b>Google x Duality Lab</b></a>
+        <span style="float:right;">
+        Purdue | Jan 2023 - May 2023 
+        </span>
+      </p>
+     <ul>
+          <li>Building data pipeline for Maskformer and Mask2former using Google Deeplab2 and Tensorflow</li>
+          <li>Generate, decode, and load TFRecords for panoptic segmentation from COCO dataset with Bash and Python</li>
+          <li>Apply random-cropping and color jitter to images/masks, create project config and data loaders</li>
+          <li>Achieving &lt 0.01% difference between PyTorch and Tensorflow implementations through differential testing</li>
+      </ul>
+      <p style="text-align:left;font-weight:bold">
+        Rocket League Software Developer <span>&#64;</span> <a href="https://rktl.purduearc.com/"> <b>Autonomous Robotics Club</b></a>
+       <span style="float:right;">
+        Purdue | Apr 2022 - Dec 2022 
+        </span>
+      </p>
+     <ul>
+          <li>Refactor sim to better reflect real-world conditions by randomizing physics dynamics, tuning car properties</li>
+          <li>Simulating latency with Rospy and ROS</li>
+      </ul>
+      <p style="text-align:left;font-weight:bold">
+        Signal Processing Intern <span>&#64;</span> <a href="https://sunscool.org/"> <b>SunScool</b></a> 
+        <span style="float:right;">
+        Sunnyvale | Apr 2022 - Aug 2022 
+        </span>
+      </p>
+     <ul>
+          <li>Trim, normalize, and denoise voiceovers from 80+ chapters with noise profiles, High and Low Pass filters</li>
+          <li>Adjusted audio volume and determined parameters for audio voice overs with FFmpeg and SOX</li>
+      </ul>
+      </article>
+    {% endcall %}
+    <!-- <Coursework /> -->
     {% call fieldset("ls ~/projects") %}
       {{ lists["projects"]|safe }}
     {% endcall %}
@@ -37,6 +156,7 @@
         Cool friends working on cool stuff
         <ul>
           <li><a href="https://arefmalek.com/">Aref Malek</a></li>
+          <li><a href="https://sagarpatil.me/">Sagar Patil </a> (shoutout for this website template) </li>
           <li><a href="https://coleroberts.dev/index">Cole Roberts</a></li>
           <li><a href="https://harmya.me/">Harmya Bhatt</a></li>
           <li><a href="https://bhavesh.dev/about">Bhavesh</a></li>
@@ -47,39 +167,66 @@
         </ul>
       </article>
     {% endcall %}
+    <!-- <Education/> -->
+    {% call fieldset("~/education.md") %}
+      <article>
+        <h4>MS in Computer Science @ Purdue</h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2024 - Spring 2026</li>
+        </ul>
+        <h4>BS in Computer Science, BS in Math @ Purdue</h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2022 - Spring 2025</li>
+        </ul>
+        <h4>Dual Enrolling HS Student @ De Anza College </h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2021 - Spring 2022 </li>
+        </ul>
+      </article>
+    {% endcall %}
     <!-- <Coursework /> -->
     {% call fieldset("~/courses.md") %}
       <article>
-        <h4>Fall 2021</h4>
+        <h4>Spring 2024 @ Purdue</h4>
         <ul>
-          <li>CS 18000 - Problem Solving and Object-Oriented Programming</li>
-          <li>MA 26100 - Multivariate Calculus</li>
-        </ul>
-        <h4>Spring 2021</h4>
-        <ul>
-          <li>CS 18200 - Discrete Mathamatics</li>
-          <li>CS 24000 - Programming in C</li>
-        </ul>
-        <h4>Fall 2022</h4>
-        <ul>
-          <li>CS 25000 - Computer Architecture</li>
-          <li>CS 25100 - Data Structures and Algorithms</li>
-        </ul>
-        <h4>Spring 2022</h4>
-        <ul>
+          <li>CS 55800 - Robotic Learning</li>
+          <li>CS 38100 - Analysis of Algorithms</li>
           <li>CS 25200 - Systems Programming</li>
-          <li>CS 47100 - Intro to Artificial Intelligence</li>
         </ul>
-        <h4>Fall 2023</h4>
+        <h4>Fall 2023 @ Purdue</h4>
         <ul>
-          <li>CS 37300 - Data Mining & Machine Learning</li>
-          <li>CS 38100 - Intro to Analysis of Algorithms</li>
+          <li>MA 45300 - Abstract Algebra </li>
+          <li>PHYS 27200 - Physics E&M</li>
+          <li>CS 25100 - Data Structures and Algorithms</li>
+          <li>CS 25000 - Computer Architecture</li>
         </ul>
-        <h4>Spring 2024</h4>
+        <h4>Spring 2023 @ Purdue</h4>
         <ul>
-          <li>CS 35200 - Compilers: Principles and Practice</li>
-          <li>CS 35400 - Operating Systems</li>
-          <li>CS 45600 - Programming Languages</li>
+          <li>MA 34100 - Real Analysis</li>
+          <li>MA 35301 - Lenear Algebra II</li>
+          <li>CS 18200 - Discrete Math</li>
+          <li>CS 24000 - C Programming</li>
+        </ul>
+        <h4>Fall 2022 @ Purdue</h4>
+        <ul>
+          <li>MA 35100 - Elementary Linear Algebra</li>
+          <li>STAT 35000 - Statistics</li>
+          <li>MA 18000 - Object-Oriented Programming</li>
+        </ul>
+        <h4>Winter 2022 @ De Anza </h4>
+        <ul>
+          <li>MATH 2A - Differential Equations</li>
+          <li>CIS 21JA - x86 Programming and Computer Architecture</li>
+          <li>CIS 41A - Python Programming</li>
+        </ul>
+        <h4>Fall 2021 @ De Anza </h4>
+        <ul>
+          <li>MATH 1D - Multivariable Calculus</li>
+          <li>CIS 22B - Programming Methodologies in C++</li>
+          <li>Chem 1A - General Chemistry</li>
         </ul>
       </article>
     {% endcall %}

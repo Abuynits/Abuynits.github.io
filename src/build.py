@@ -1,4 +1,4 @@
-name = "Sagar Patil"
+name = "Alexiy Buynitsky"
 
 import os
 from shutil import rmtree
