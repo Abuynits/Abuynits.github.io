@@ -46,9 +46,8 @@
       <article>
         <h4>Favorite Quotes</h4>
         <ul>
-          <li>"If you are not in pain, you are not learning." - mentor @ SpaceX</li>
-          <li>"FAFO" and "FIFI" - manager at SpaceX</li>
-          <li> "Oooooh yea I dont like this problem. It came off a graduate qualifying exam. I put it on there just to torment people, even I don't know how to do it" - Abstract Algebra Prof.</li>
+          <li>"If you are not in pain, you are not learning.", "FAFO",  "FIFI" - ppl @ SpaceX</li>
+          <li> "Oooooh yea I don't like this problem. It came off a graduate qualifying exam. I put it on there just to torment people, even I don't know how to do it" - MA 453 Prof</li>
           <li>"[Insert Algo Question]. Provide a brief but precise explanation" - CS 251/381 exams</li>
         </ul>
         <h4>Favorite Coffee Shops</h4>
@@ -151,6 +150,26 @@
     {% call fieldset("ls ~/projects") %}
       {{ lists["projects"]|safe }}
     {% endcall %}
+    <!-- <Education/> -->
+    {% call fieldset("~/education.md") %}
+      <article>
+        <h4>MS in CS @ Purdue</h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2024 - Spring 2026</li>
+        </ul>
+        <h4>BS in CS, BS in Math @ Purdue</h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2022 - Spring 2025</li>
+        </ul>
+        <h4>Dual Enrolling HS Student @ De Anza College </h4>
+        <ul>
+          <li>GPA: 4.00</li>
+          <li>Fall 2021 - Spring 2022 </li>
+        </ul>
+      </article>
+    {% endcall %}
     {% call fieldset("~/friends.md") %}
       <article>
         Cool friends working on cool stuff
@@ -164,26 +183,6 @@
           <li><a href="https://jinen.setpal.net/">Jinen Setpal</a></li>
           <li><a href="https://mikail-khan.com/">Mikail Khan</a></li>
           <li><a href="https://wade.dev/">Nicholas Wade</a></li>
-        </ul>
-      </article>
-    {% endcall %}
-    <!-- <Education/> -->
-    {% call fieldset("~/education.md") %}
-      <article>
-        <h4>MS in Computer Science @ Purdue</h4>
-        <ul>
-          <li>GPA: 4.00</li>
-          <li>Fall 2024 - Spring 2026</li>
-        </ul>
-        <h4>BS in Computer Science, BS in Math @ Purdue</h4>
-        <ul>
-          <li>GPA: 4.00</li>
-          <li>Fall 2022 - Spring 2025</li>
-        </ul>
-        <h4>Dual Enrolling HS Student @ De Anza College </h4>
-        <ul>
-          <li>GPA: 4.00</li>
-          <li>Fall 2021 - Spring 2022 </li>
         </ul>
       </article>
     {% endcall %}
