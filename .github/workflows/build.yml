@@ -53,9 +53,14 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v4
+#        with:
+#          path: ./dist
+
+      - uses: actions/upload-artifact@v4
         with:
+          name: Upload artifact
           path: ./dist
 
   deploy:
