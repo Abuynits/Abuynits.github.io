@@ -2,7 +2,7 @@
 title: "Interviewer but Better"
 summary: "Grift Detector + Interview Platform"
 coverImage: "/assets/projects/interviewer/interviewer_overview.png"
-order: 0 
+order: 2 
 ---
 
 **Output from an agent that downloaded and cross-referenced a users resume against their github**

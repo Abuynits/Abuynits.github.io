@@ -2,7 +2,7 @@
 title: "Wave"
 summary: "A Gesture-Controlled Human-Computer Interface (HCI)"
 coverImage: "/assets/projects/wave/wave_overview.png"
-order: 3 
+order: 4 
 ---
 **Example of WAVE detecting a swipe right gesture to switch desktops**
 

@@ -2,7 +2,7 @@
 title: "FRC 3501 / FTC 16533"
 summary: "Mechanical Design and Manufacturing"
 coverImage: "/assets/projects/frc_ftc/FRC_overview.png"
-order: 7
+order: 8
 ---
 
 **FRC 3501 CAD for Rapid React (2021 - 2022)**

@@ -2,7 +2,7 @@
 title: "AirQ"
 summary: "LSTM / seq2seq model for air quality prediction"
 coverImage: "/assets/projects/airq/airq_overview.png"
-order: 5 
+order: 6 
 ---
 
 **Output from a seq2seq model for predicting 10 time steps**

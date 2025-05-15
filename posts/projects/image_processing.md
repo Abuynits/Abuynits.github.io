@@ -2,7 +2,7 @@
 title: "Image Proccessing"
 summary: "Compilation of random CV + image processing projects"
 coverImage: "/assets/projects/processing/processing_overview.png"
-order: 6
+order: 9
 ---
 
 
