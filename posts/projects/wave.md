@@ -1,12 +1,13 @@
 ---
 title: "Wave"
 summary: "A Gesture-Controlled Human-Computer Interface (HCI)"
-coverImage: "/assets/projects/wave_overview.png"
-order: 2 
+coverImage: "/assets/projects/wave/wave_overview.png"
+order: 3 
 ---
 **Example of WAVE detecting a swipe right gesture to switch desktops**
 
 
+[Devpost link](https://devpost.com/software/wave-9cr4ni)
 
 ## Background
 
@@ -18,7 +19,7 @@ So we created Wave. A gesture HCI which allows users to interact with their disp
 
 ### Another Example:
 
-<img src="/assets/projects/wave_ex_2.png" width="600" height="600">
+<img src="/assets/projects/wave/wave_ex_2.png" width="600" height="600">
 
 ### Pose Detection
 

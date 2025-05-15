@@ -1,13 +1,13 @@
 ---
 title: "FRC 3501 / FTC 16533"
 summary: "Mechanical Design and Manufacturing"
-coverImage: "/assets/projects/FRC_overview.png"
-order: 6
+coverImage: "/assets/projects/frc_ftc/FRC_overview.png"
+order: 7
 ---
 
 **FRC 3501 CAD for Rapid React (2021 - 2022)**
 
-<img src="/assets/projects/FTC_overview.png">
+<img src="/assets/projects/frc_ftc/FTC_overview.png">
 
 **FTC 16533 CAD for Skystone (2019 - 2020)**
 

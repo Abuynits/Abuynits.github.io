@@ -1,8 +1,8 @@
 ---
 title: "Image Proccessing"
 summary: "Compilation of random CV + image processing projects"
-coverImage: "/assets/projects/processing_overview.png"
-order: 5
+coverImage: "/assets/projects/processing/processing_overview.png"
+order: 6
 ---
 
 
@@ -13,7 +13,7 @@ This is a collection of small CV / Image Processing Projects I've completed
 
 ## Pokemón Classifier
 
-<img src="/assets/projects/processing_pkm.png" width="500" height="500">
+<img src="/assets/projects/processing/processing_pkm.png" width="500" height="500">
 
 **Dataset sample highlighting the low number of samples**
 
@@ -26,7 +26,7 @@ I ended up winning 1st place!!
 
 ## Rock Paper Scissor Game
 
-<img src="/assets/projects/processing_rps.png" width="500" height="500">
+<img src="/assets/projects/processing/processing_rps.png" width="500" height="500">
 
 **Rock paper scissor detector @ 95% accuracy**
 
@@ -38,7 +38,7 @@ We were challenged to reach >95% accuracy with the smallest parameter count. My 
 
 ## K-Nearest Neighbor / Image Filters
 
-<img src="/assets/projects/processing_knn.png" width="500" height="500">
+<img src="/assets/projects/processing/processing_knn.png" width="500" height="500">
 
 **KNN using 7 Clusters**
 
@@ -48,7 +48,7 @@ There I implemented KNN in addition to image filters such as image rotation, col
 
 ## OCR for Playing Cards
 
-<img src="/assets/projects/processing_cards.png" width="500" height="500">
+<img src="/assets/projects/processing/processing_cards.png" width="500" height="500">
 
 **Detecting cards with OpenCV + MNIST. It didnt work well...**
 
