@@ -7,18 +7,16 @@
     {% call fieldset("whoami") %}
       <div class="flex flex-col gap-3 text-lg">
         <p>
-          Hey!! I'm Alexiy, an incoming MS student in CSE at UCSD (Graduted from
-          Purdue with a BS in CS and Math May '25!) with an unbreakable caffeine
+          Hey!! I'm Alexiy, a MS student majoring in CSE at UCSD (Graduted from
+          Purdue with a BS in CS & Math May '25!) with an unbreakable caffeine
           addiction (even full-timers at SpaceX were concerned...).
           <br />
           <br />
-
           I love learning anything new and learn best by getting my hands dirty.
           For me, the best feeling in the world is when something works/clicks
-          after bashing my head against a problem for hours or even days.
+          after bashing my head against a problem for days, weeks, or even months.
           <br />
           <br />
-
           In my free time, I love hiking / mountain biking / skiing, and finding
           excuses to visit coffee shops.
           <br />
@@ -77,7 +75,8 @@
           </li>
           <li>
             "We are very close to a working Diffusion Policy or insanity, one way or another.",
-            "Robot bringup 'valley of despair' can last 2 weeks to 6 months. Hopefully its on the shorter side. Robots are ***holes." - ppl @ Persona
+            "Robots are ***holes.",
+            "Just give me spotify, a diet coke and two hours and i'll built the vention table" - ppl @ Persona
           </li>
 
         </ul>
@@ -86,6 +85,7 @@
           <li>Mount Currie Coffee Co in Whistler B.C.</li>
           <li>Schat's Bakery in Mammoth Lakes</li>
           <li>Philz Coffee in Sunnyvale</li>
+          <li>Agora Cafe in Houston</li>
         </ul>
         <h4>Favorite Hikes</h4>
         <ul>
@@ -116,24 +116,32 @@
     {% call fieldset("~/Experience.md") %}
       <article>
         <p style="text-align:left;font-weight:bold">
-          Incoming ML Intern <span>&#64;</span>
+          ML Engineering Intern <span>&#64;</span>
           <a href="https://personainc.ai/"> <b>Persona AI</b></a>
           <span style="float:right;font-weight:bold;">
-            Houston | May 2025
+            Houston | May 2025 - Aug 2025
           </span>
         </p>
-        <!-- <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      </ul> -->
+        <ul>
+      <li>
+        Engineered architectural & training improvements for learning tasks 
+        with visuomotor policies & VLAs
+      </li>
+      <li>Built scalable teleoperation pipeline with Gello & SpaceMouse for large-scale
+        data collection on bimanual manipulators</li>
+      <li>Designed data processing pipeline, converting raw data into
+        frequency-synchronized, model-agnostic datasets and generating model-specific datasets for training</li>
+      <li>
+          Created evaluation pipelines using digital twins in NVIDIA Isaac Lab and quantitative metrics
+      </li>
+      </ul>
 
         <article>
           <p style="text-align:left;font-weight:bold">
-            Undegraduate Researcher <span>&#64;</span>
+            Graduate Robotics Researcher <span>&#64;</span>
             <a href="https://commalab.github.io/"> <b>CoMMA Lab</b></a>
             <span style="float:right;font-weight:bold;">
-              Purdue | Aug 2023 - Present
+              Purdue | Aug 2024 - May 2025
             </span>
           </p>
           <ul>
@@ -179,7 +187,7 @@
             </ul>
 
             <p style="text-align:left;font-weight:bold">
-              Undegraduate Researcher <span>&#64;</span>
+              Undegraduate Robotics Researcher <span>&#64;</span>
               <a href="https://corallab.net/"> <b>CoRAL Lab</b></a>
               <span style="float:right;font-weight:bold;">
                 Purdue | Aug 2023 - May 2025
@@ -226,7 +234,7 @@
               </li>
             </ul>
             <p style="text-align:left;font-weight:bold">
-              TensorFlow Model Developer <span>&#64;</span>
+              Undergraduate ML Researcher <span>&#64;</span>
               <a href="https://github.com/PurdueDualityLab/tf-maskformer">
                 <b>Google x Duality Lab</b></a
               >
@@ -234,23 +242,22 @@
             </p>
             <ul>
               <li>
-                Building data pipeline for Maskformer and Mask2former using
-                Google Deeplab2 and Tensorflow
+                Building data pipeline for Maskformer and Mask2former in TensorFlow Model Garden
               </li>
               <li>
                 Generate, decode, and load TFRecords for panoptic segmentation
-                from COCO dataset with Bash and Python
+                from COCO dataset
               </li>
               <li>
                 Apply random-cropping and color jitter to images/masks, create
                 project config and data loaders
               </li>
               <li>
-                Achieving &lt 0.01% difference between PyTorch and Tensorflow
-                implementations through differential testing
+                Achieving &lt 0.01% difference between Torch and Tensorflow
+                implementations with differential testing
               </li>
             </ul>
-            <p style="text-align:left;font-weight:bold">
+            <!-- <p style="text-align:left;font-weight:bold">
               Rocket League Software Developer <span>&#64;</span>
               <a href="https://rktl.purduearc.com/">
                 <b>Autonomous Robotics Club</b></a
@@ -280,7 +287,7 @@
                 Adjusted audio volume and determined parameters for audio voice
                 overs with FFmpeg and SOX
               </li>
-            </ul>
+            </ul> -->
           </article>
         </article>
       </article>
@@ -456,6 +463,11 @@
     <!-- <Coursework /> -->
     {% call fieldset("~/courses.md") %}
       <article>
+        <h4>Fall 2025 @ UCSD</h4>
+        <ul>
+          <li>CSE 291A - Generative AI</li>
+          <li>CSE 260 - Parallel Computing</li>
+        </ul>
         <h4>Spring 2025 @ Purdue</h4>
         <ul>
           <li>CS 58700 - Deep Learning</li>
