@@ -1,33 +1,28 @@
-#/bin/sh
+#!/bin/bash
 
-# convert all images to webp
-# find and replace image urls in html files
+convert_image() {
+    local img="$1"
+    local ext="${img##*.}"
+    local out="$img.webp"
 
-imgs=$(find ./dist -type f -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' -o -name '*.JPEG' -o -name '*.png' -o -name '*.PNG' -o -name '*.gif' -o -name '*.GIF')
-basenames=$(echo $imgs | xargs -n1 basename)
+    if [[ "$ext" =~ ^(gif|GIF)$ ]]; then
+        # Use gif2webp for animations
+        gif2webp -q 80 "$img" -o "$out" -quiet && rm "$img"
+    else
+        # Use cwebp for static images
+        cwebp -q 80 "$img" -o "$out" -quiet && rm "$img"
+    fi
+}
+export -f convert_image
 
-# convert images to webp
-for img in $imgs; do
-    anon() {
-        echo "Converting $img to $img.webp"
-        cwebp -q 80 $img -o $img.webp -quiet
-        rm $img
-    }
+# 1. Convert all images using 4 parallel workers (stable for CI)
+find ./dist -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \) | \
+xargs -I {} -P 4 bash -c 'convert_image "$@"' _ {}
 
-    anon &
+# 2. Update HTML references
+# This regex targets local extensions and appends .webp 
+# only if they aren't already converted.
+echo "Updating HTML references..."
+find ./dist -type f -name "*.html" | while read -r html; do
+    sed -i -E 's/(\.(jpg|jpeg|png|gif))([^.]|$)/\1.webp\3/gI' "$html"
 done
-
-# replace image urls in html files
-htmls=$(find ./dist -type f -name '*.html')
-
-for html in $htmls; do
-    anon() {
-        for img in $basenames; do
-            sed -i "s/$img/$img.webp/g" $html
-        done
-    }
-
-    anon &
-done
-
-wait

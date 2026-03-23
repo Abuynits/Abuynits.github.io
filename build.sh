@@ -13,7 +13,7 @@ html() {
 static() {
     for ent in public/*; do
         echo "Copying $ent to dist/${ent##*/}"
-        cp -r $ent dist/${ent##*/}
+        cp -r "$ent" "dist/${ent##*/}"
     done
 }
 
@@ -21,20 +21,18 @@ opt_imgs() {
     ./src/optimize-images.sh
 }
 
-html_static() {
-    html &
-    hpid=$!
-
-    static &
-    spid=$!
-
-    wait $hpid $spid
-    opt_imgs &
-}
-
+# 1. Preparation
 rm -rf dist && mkdir dist
 
+# 2. Parallel Generation
 tw &
-html_static &
+html &
+static &
 
+# 3. Block and Wait
 wait
+
+# 4. Sequential Optimization
+opt_imgs
+
+echo "Build complete!"
