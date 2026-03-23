@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+{% from "components/fieldset.html" import fieldset %}
+
+{% block content %}
+  {% call fieldset("~/random/favorite_hikes.html") %}
+
+    <section
+      class="outline outline-1 outline-black dark:outline-gray-300 shadow-[5px_5px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[5px_5px_0px_1px_rgba(255,255,255,0.25)] p-3"
+      aria-label="Favorite hike highlights"
+    >
+      <div class="relative aspect-[4/3] w-full overflow-hidden outline outline-1 outline-black dark:outline-gray-300 bg-black/5 dark:bg-white/5">
+        <img
+          id="hike-slide-image"
+          src=""
+          alt=""
+          class="h-full w-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <button id="hike-prev" type="button" class="pub-btn">Previous</button>
+        <button id="hike-next" type="button" class="pub-btn">Next</button>
+        <span id="hike-index" class="text-sm"></span>
+      </div>
+
+      <article class="mt-3">
+        <h3 id="hike-title" class="m-0"></h3>
+        <p id="hike-location" class="mt-1 mb-1 italic"></p>
+        <p id="hike-description" class="mt-1 mb-0"></p>
+      </article>
+    </section>
+
+    <script>
+      (function () {
+        // Customize this array to add/remove hikes, photos, and route notes.
+        const slides = [
+          {
+            title: "Thunder Mountain / Glacier Lake",
+            location: "Alpine Lakes Wilderness, Washington",
+            description: "",
+            image: "/assets/hikes/wa_thunder_mountain.png"
+          },
+          {
+            title: "Kendall Katwalk ",
+            location: "Snoqualmie Pass, Washington",
+            description: "",
+            image: "/assets/hikes/wa_kendall_catwalk.png"
+          },
+          {
+            title: "Sahale Arm / Cascade Pass",
+            location: "North Cascades National Park, Washington",
+            description: "",
+            image: "/assets/hikes/wa_sahale_arm.png"
+          },
+          {
+            title: "Garibaldi Lake",
+            location: "British Columbia, Canada",
+            description: "",
+            image: "/assets/hikes/bc_lake_giralbaldi.png"
+          },
+          {
+            title: "Lake Ediza - 1000 Islands Lakes",
+            location: "Eastern Sierra, California",
+            description: "",
+            image: "/assets/hikes/ca_lake_ediza.png"
+          },
+          {
+            title: "Enchantment Lakes / Aasgard Pass",
+            location: "Central Cascades, Washington",
+            description: "",
+            image: "/assets/hikes/wa_enchantment_lakes.png"
+          },
+          {
+            title: "Fire Lookout Mount Ranier",
+            location: "Mount Ranier National Park, Washington",
+            description: "",
+            image: "/assets/hikes/wa_mt_rainer_lookout.png"
+          },
+          {
+            title: "Random PCT Section",
+            location: "Somewhere along hw2, Washington",
+            description: "",
+            image: "/assets/hikes/wa_random_pct_section.png"
+          },
+        ];
+
+        const imageEl = document.getElementById("hike-slide-image");
+        const titleEl = document.getElementById("hike-title");
+        const locationEl = document.getElementById("hike-location");
+        const descriptionEl = document.getElementById("hike-description");
+        const indexEl = document.getElementById("hike-index");
+        const prevBtn = document.getElementById("hike-prev");
+        const nextBtn = document.getElementById("hike-next");
+
+        if (!imageEl || !titleEl || !locationEl || !descriptionEl || !indexEl || !prevBtn || !nextBtn) {
+          return;
+        }
+
+        if (slides.length === 0) {
+          titleEl.textContent = "No hike slides configured yet.";
+          return;
+        }
+
+        let activeIndex = 0;
+
+        const render = function () {
+          const slide = slides[activeIndex];
+          imageEl.src = slide.image;
+          titleEl.textContent = slide.title;
+          locationEl.textContent = slide.location;
+          descriptionEl.textContent = slide.description;
+          indexEl.textContent = (activeIndex + 1) + " / " + slides.length;
+        };
+
+        prevBtn.addEventListener("click", function () {
+          activeIndex = (activeIndex - 1 + slides.length) % slides.length;
+          render();
+        });
+
+        nextBtn.addEventListener("click", function () {
+          activeIndex = (activeIndex + 1) % slides.length;
+          render();
+        });
+
+        render();
+      })();
+    </script>
+  {% endcall %}
+{% endblock %}

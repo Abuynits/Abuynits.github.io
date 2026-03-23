@@ -1,0 +1,22 @@
+- "If you are not in pain, you are not learning." - Mentor @ SpaceX
+- "FAFO", "F*** it Fly it" - Manager @ SpaceX
+- "Who needs drugs when you have Engineering" - Stuff Made Here
+- "[Insert Algo Question]. Provide a brief but precise explanation" - CS 251/381 exams
+- "Oooooh yea I don't like this problem. It came off a graduate qualifying exam. I put it on there just to torment people, even I don't know how to do it" - MA 453 Prof
+- "[Discussing logs of complex #s]... Unfortunately zero is still F***ed. I don't know how to take log of zero" - MA 425 prof
+- "Next friday you are gonna be tired after midterm so we gonna do some goofing [goofing = deriving RSA]. Enjoy your weekend but not too much." - CS 182 prof
+- "[Talking about CS251 exam] Yes, I added this question to troll kids" - CS251 Head TA
+- "Oh right I remember now. This problem wasn't solvable last time I took the course" - CS 587 TA
+- "We are very close to a working Diffusion Policy or insanity, one way or another." - Mentor @ Persona
+- "Robots are ***holes." - ppl @ Persona
+- "Just give me spotify, a diet coke and two hours and i'll built the vention table" - Intern @ Persona
+- "I was at nvidia when i was doing this work so of course I needed to do simulation" - robotics prof @ UCSD
+- Postdoc: "what else part [in the paper] that may need help" Phd: "experiment part... still." - Slack @ 3:16 AM
+- "No agent AGI or not can ever be π* in reality. So never stop trying." - CSE 257 prof
+- Prof: "Why is this true?" Student: "Bc conceptual it makes sense" Prof: "How about mathematically?"
+- "Simulated Annealing is a stupid idea. As we see now, being stupid is not a problem. Being stupid is a virtue [pause] sometimes" - CSE 257 prof
+- "The whole point of this course is to show that ADAM is as hopeless as you are" - CSE 257 prof
+- [Last day of CSE 203b] Student: "Can we start the next chapter?" Prof: "No, No more."
+- [Ended 10 minutes early] "Should we go on, or should we go home?" - CSE 203b prof
+- "Png for convenience, pdf for paper." - Phd 3 hours before submission
+- "Im planning on doing a recorded lecture for next week, maybe you want to share it with your family, like 'hey, want to watch my lecture?' We’re all tired of watching hallmark channel around the holidays, you can watch this instead." - CSE 260 prof

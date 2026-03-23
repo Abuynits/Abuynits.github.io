@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% from "components/fieldset.html" import fieldset %}
+
+{% block content %}
+  {% call fieldset("~/random/favorite_books.html") %}
+    <article>
+      <ul>
+        <li>
+          <b>The Martian</b> (Andy Weir): I probably read it 10 times as a kid. 
+        </li>
+        <li>
+          <b>Project Hail Mary</b> (Andy Weir): Read it in one sitting (~8 hrs).
+        </li>
+        <li>
+          <b>Convex Optimization</b> (Stephen Boyd and Lieven Vandenberghe):
+          Boyd is my hero. I will do anything for Boyd.
+        </li>
+        <li>
+          <b>Algebra, Topology, Differential Calculus, and Optimization Theory for CS & ML</b>
+          (Jean Gallier and Jocelyn Quaintance): Wrinkled my brain. I still dont understand 
+          a lot lol.
+        </li>
+      </ul>
+    </article>
+  {% endcall %}
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% from "components/fieldset.html" import fieldset %}
+
+{% block content %}
+  {% call fieldset("cat ~" + post.href) %}
+    <article class="not-prose">
+      <div class="flex flex-col gap-4 outline outline-1 outline-black dark:outline-gray-300 shadow-[5px_5px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[5px_5px_0px_1px_rgba(255,255,255,0.25)] me-[6px] mb-[6px] p-4">
+        {% if post.thumbnail %}
+          <img
+            src="{{ post.thumbnail }}"
+            alt="{{ post.title }} thumbnail"
+            class="h-56 w-full object-cover"
+            loading="lazy"
+          />
+        {% endif %}
+        <div class="text-2xl font-bold leading-snug">{{ post.title }}</div>
+        <div>{{ post.authors|safe }}</div>
+        <div class="italic">{{ post.venue }}, {{ post.year }}</div>
+        <div class="flex flex-row flex-wrap gap-y-2 mt-1">
+          {% if post.arxiv %}
+            <a href="{{ post.arxiv }}" class="pub-btn" target="_blank" rel="noopener noreferrer">arXiv</a>
+          {% endif %}
+          {% if post.website %}
+            <a href="{{ post.website }}" class="pub-btn" target="_blank" rel="noopener noreferrer">Website</a>
+          {% endif %}
+        </div>
+        <div class="text-sm leading-relaxed border-l-2 border-black dark:border-white pl-3">
+          {{ post.content|safe }}
+        </div>
+        {% if post.bibtex %}
+          <pre class="text-xs bg-gray-100 dark:bg-gray-900 p-2 overflow-x-auto leading-relaxed">{{ post.bibtex }}</pre>
+        {% endif %}
+      </div>
+    </article>
+  {% endcall %}
+{% endblock %}

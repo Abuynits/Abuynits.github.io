@@ -1,0 +1,54 @@
+<div class="flex flex-col gap-4">
+  {% for post in posts %}
+    <div class="flex flex-row gap-4 outline outline-1 outline-black dark:outline-gray-300 shadow-[5px_5px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[5px_5px_0px_1px_rgba(255,255,255,0.25)] me-[6px] mb-[6px] p-3">
+      {% if post.thumbnail %}
+        <div class="flex-shrink-0 w-40 sm:w-52">
+          <img
+            src="{{ post.thumbnail }}"
+            alt="{{ post.title }} thumbnail"
+            class="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      {% endif %}
+      <div class="flex flex-col gap-1 min-w-0">
+        <div class="font-bold leading-snug">{{ post.title }}</div>
+        <div class="text-sm">{{ post.authors|safe }}</div>
+        <div class="text-sm italic">{{ post.venue }}, {{ post.year }}</div>
+        <div class="flex flex-row flex-wrap gap-y-2 mt-2"> 
+          <button class="pub-btn pub-toggle" data-target="{{ post.slug }}-abstract">Abstract</button>
+          {% if post.arxiv %}
+            <a href="{{ post.arxiv }}" class="pub-btn" target="_blank" rel="noopener noreferrer">arXiv</a>
+          {% endif %}
+          {% if post.pdf%}
+            <a href="{{ post.pdf}}" class="pub-btn" target="_blank" rel="noopener noreferrer">pdf</a>
+          {% endif %}
+          {% if post.bibtex %}
+            <button class="pub-btn pub-toggle" data-target="{{ post.slug }}-bibtex">BibTeX</button>
+          {% endif %}
+          {% if post.website %}
+            <a href="{{ post.website }}" class="pub-btn" target="_blank" rel="noopener noreferrer">Website</a>
+          {% endif %}
+          {% if post.video %}
+            <a href="{{ post.video }}" class="pub-btn" target="_blank" rel="noopener noreferrer">Video</a>
+          {% endif %}
+        </div>
+        <div id="{{ post.slug }}-abstract" class="hidden mt-2 text-sm leading-relaxed border-l-2 border-black dark:border-white pl-3">
+          {{ post.content|safe }}
+        </div>
+        {% if post.bibtex %}
+          <pre id="{{ post.slug }}-bibtex" class="hidden mt-2 text-xs bg-gray-100 dark:bg-gray-900 p-2 overflow-x-auto leading-relaxed">{{ post.bibtex }}</pre>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<script>
+  document.querySelectorAll('.pub-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = document.getElementById(btn.dataset.target);
+      var isNowVisible = target.classList.toggle('hidden') === false;
+      btn.classList.toggle('active', isNowVisible);
+    });
+  });
+</script>

@@ -57,3 +57,11 @@ article {
 
   background-color: currentColor;
 }
+
+.pub-btn {
+  @apply inline-flex items-center justify-center rounded-none mr-2 px-2 py-1 text-xs font-medium outline outline-1 outline-black dark:outline-white shadow-[3px_3px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[3px_3px_0px_1px_rgba(255,255,255,0.6)] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors;
+}
+
+.pub-btn.active {
+  @apply bg-black text-white dark:bg-white dark:text-black;
+}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% from "components/fieldset.html" import fieldset %}
+
+{% block content %}
+  {% call fieldset("~/random/happiness.html") %}
+    <section
+      class="outline outline-1 outline-black dark:outline-gray-300 shadow-[5px_5px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[5px_5px_0px_1px_rgba(255,255,255,0.25)] p-3"
+      aria-label="Happiness"
+    >
+      <div class="relative mx-auto w-full max-w-3xl overflow-hidden outline outline-1 outline-black dark:outline-gray-300 bg-black/5 dark:bg-white/5">
+        <img
+          src="/assets/happiness.png"
+          class="h-auto w-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    </section>
+  {% endcall %}
+{% endblock %}
