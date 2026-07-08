@@ -7,6 +7,7 @@
 - "[Discussing logs of complex #s]... Unfortunately zero is still F***ed. I don't know how to take log of zero" - Complex Analysis Prof
 - "So now that we've had veggies of complex analysis, next time we'll have desert of pretty pictures" - Complex Analysis Prof
 - "Next friday you are gonna be tired after midterm so we gonna do some goofing [goofing = deriving RSA]. Enjoy your weekend but not too much" - Discrete Math Prof
+- "Pain is temporary, GPA is forever" - restaurant near Purdue
 - "[Talking about Data Structures exam] Yes, I added this question to troll kids" - Data Structures Head TA
 - "Oh right I remember now. This problem wasn't solvable last time I took the course" - Deep Learning TA
 - "[Discussing Flow Matching] I honestly cannot think of a more braindead way of doing this. This is a compliment to the authors" - Deep Learning Prof
@@ -23,3 +24,7 @@
 - [Ended 10 minutes early] "Should we go on, or should we go home?" - Cvx Opt prof
 - "Png for convenience, pdf for paper." - Phd 3 hours before submission
 - "Im planning on doing a recorded lecture for next week, maybe you want to share it with your family, like 'hey, want to watch my lecture?' We’re all tired of watching hallmark channel around the holidays, you can watch this instead.'" - Parallel Computing prof
+- "If you are engineer at OpenAI and observe cluster have lower than 40% Mfu, yo should work more" - ML Sys Prof
+- "Remember last year Deepseek came out and Nvidia stock crashed? Deepseek v4 comes out in a few weeks. You know what to do" - ML Sys Prof
+- "In the future, 50% of compute will run LM inference. if you can optimize 1% percent of it, you will have really big aura" - ML Sys Prof
+- PhD: "treat [another phd] as Claude Code" MS Student: "You mean ask them for their opinion?" - 3:48 AM, 2 days before submission
