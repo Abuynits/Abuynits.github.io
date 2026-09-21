@@ -7,7 +7,7 @@ tw() {
 
 html() {
     echo "Building HTML files to dist"
-    uv run python src/build.py --output dist --no-clean
+    python src/build.py --output dist --no-clean
 }
 
 static() {

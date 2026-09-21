@@ -30,7 +30,7 @@
 - "In the future, 50% of compute will run LM inference. if you can optimize 1% percent of it, you will have really big aura" - ML Sys Prof
 - PhD: "treat [another phd] as Claude Code" MS Student: "You mean ask them for their opinion?" - 3:48 AM, 2 days before submission
 - "... if any of you show me an AI generated figure seriously for a paper you are being immolated on the spot" - annon. Prof
-- "West Lafayette is a good town. Not all cornfield. It's much better than Virginia tech" - postdoc
+- "West Lafayette is a good town. Not all cornfield." - postdoc @ UCSD
 - "In ML what are you going to do except pray to Jesus" - PhD intern @ Nvidia
 - Q: "How do you manage your energy level?" A: "the answer is I fake it" - Jensen
 - "We have a few questions about retirement. I'm encouraging everyone to retire. We are out of cubicles" - Jensen
