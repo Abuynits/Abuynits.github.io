@@ -6,7 +6,8 @@
 - "Oooooh yea I don't like this problem. It came off a graduate qualifying exam. I put it on there just to torment people, even I don't know how to do it" - Abstract Algebra Prof
 - "[Discussing logs of complex #s]... Unfortunately zero is still F***ed. I don't know how to take log of zero" - Complex Analysis Prof
 - "So now that we've had veggies of complex analysis, next time we'll have desert of pretty pictures" - Complex Analysis Prof
-- "Next friday you are gonna be tired after midterm so we gonna do some goofing [goofing = deriving RSA]. Enjoy your weekend but not too much" - Discrete Math Prof
+- "Next friday you are gonna be tired after midterm so we gonna do some goofing [aka deriving RSA]." - Discrete Math Prof
+- "Enjoy your weekend but not too much" - Discrete Math Prof
 - "Pain is temporary, GPA is forever" - restaurant near Purdue
 - "[Talking about Data Structures exam] Yes, I added this question to troll kids" - Data Structures Head TA
 - "Oh right I remember now. This problem wasn't solvable last time I took the course" - Deep Learning TA
@@ -21,10 +22,19 @@
 - "Simulated Annealing is a stupid idea. As we see now, being stupid is not a problem. Being stupid is a virtue [pause] sometimes" - Search & Opt Prof
 - "The whole point of this course is to show that ADAM is as hopeless as you are" - Search & Opt Prof
 - [Last day of Cvx Opt] Student: "Can we start the next chapter?" Prof: "No, No more."
-- [Ended 10 minutes early] "Should we go on, or should we go home?" - Cvx Opt prof
+- [Ended 10 minutes early] "Should we go on, or should we go home?" - Cvx Opt prof (we went home)
 - "Png for convenience, pdf for paper." - Phd 3 hours before submission
 - "Im planning on doing a recorded lecture for next week, maybe you want to share it with your family, like 'hey, want to watch my lecture?' We’re all tired of watching hallmark channel around the holidays, you can watch this instead.'" - Parallel Computing prof
-- "If you are engineer at OpenAI and observe cluster have lower than 40% Mfu, yo should work more" - ML Sys Prof
+- "If you are engineer at OpenAI and observe cluster have lower than 40% Mfu, you should work more" - ML Sys Prof
 - "Remember last year Deepseek came out and Nvidia stock crashed? Deepseek v4 comes out in a few weeks. You know what to do" - ML Sys Prof
 - "In the future, 50% of compute will run LM inference. if you can optimize 1% percent of it, you will have really big aura" - ML Sys Prof
 - PhD: "treat [another phd] as Claude Code" MS Student: "You mean ask them for their opinion?" - 3:48 AM, 2 days before submission
+- "... if any of you show me an AI generated figure seriously for a paper you are being immolated on the spot" - annon. Prof
+- "West Lafayette is a good town. Not all cornfield. It's much better than Virginia tech" - postdoc
+- "In ML what are you going to do except pray to Jesus" - PhD intern @ Nvidia
+- Q: "How do you manage your energy level?" A: "the answer is I fake it" - Jensen
+- "We have a few questions about retirement. I'm encouraging everyone to retire. We are out of cubicles" - Jensen
+- "I reviewed your CL and left a bunch of comments - could be bc im old or bc you're a noob" - Mentor at Nvidia (spoiler: i was a noob)
+- "If you are ever stresssed, tak a test drive [in a Mercedes S class]. Just make sure your CL is not on [it]" - VP @ Nvidia
+- "This is one thing i learned ... [you] never say collision, you use object overlap" - Mentor at Nvidia
+- "Good Science, Good Software Design, Good Code, in that order" - mentor at Nvidia
